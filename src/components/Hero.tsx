@@ -6,12 +6,8 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative py-32 flex items-center justify-center overflow-hidden bg-gradient-to-br from-purple-50 via-white to-sky-50"
+      className="relative py-32 flex items-center justify-center overflow-hidden"
     >
-      {/* Background Blobs */}
-      <div className="absolute top-20 left-20 w-64 h-64 bg-purple-200 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-pulse" />
-      <div className="absolute bottom-20 right-20 w-64 h-64 bg-sky-200 rounded-full mix-blend-multiply filter blur-2xl opacity-40 animate-pulse delay-1000" />
-
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div>
           <h1 className="text-6xl sm:text-8xl font-bold tracking-tight text-slate-700 mb-8 font-display">

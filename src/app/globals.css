@@ -3,7 +3,7 @@
 @theme {
   --font-sans: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   --font-display:
-    var(--font-Capriola), "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    var(--font-capriola), "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
     Meiryo, sans-serif;
 }
 
@@ -53,7 +53,7 @@ h6 {
 
 .title-cute {
   @apply text-5xl text-sky-400 mb-6 tracking-wide;
-  font-family: var(--font-Capriola), cursive;
+  font-family: var(--font-capriola), cursive;
   font-weight: 700;
 }
 
