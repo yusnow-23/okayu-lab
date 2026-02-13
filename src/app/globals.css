@@ -1,26 +1,85 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  --font-display:
+    var(--font-Capriola), "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    Meiryo, sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* White x Pastel Blue x Pastel Purple Theme */
+  --background: #ffffff; /* White */
+  --foreground: #475569; /* Slate 600 */
+  --primary: #bae6fd; /* Sky 200 (Pastel Blue) */
+  --secondary: #e9d5ff; /* Purple 200 (Pastel Purple) */
+  --accent: #f0abfc; /* Fuchsia 300 (Bright Purple/Pink accent) */
 }
 
 body {
-  background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--background);
+  font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-capriola), "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+/* Custom Utilities for "Loose & Cute" */
+.container-padding {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.section-padding {
+  @apply py-16 sm:py-24;
+}
+
+/* Handwritten-style border radius */
+.border-hand {
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.card-base {
+  @apply bg-white shadow-sm border-2 border-slate-100 hover:border-indigo-200 transition-all duration-300;
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+}
+
+.title-cute {
+  @apply text-5xl text-sky-400 mb-6 tracking-wide;
+  font-family: var(--font-Capriola), cursive;
+  font-weight: 700;
+}
+
+/* Blob shape for background */
+.blob {
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float 7s ease-in-out infinite;
+  animation-delay: 1s;
 }
