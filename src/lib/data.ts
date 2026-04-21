@@ -31,18 +31,32 @@ export const skills = [
 
 export const portfolioItems = [
   {
+    title: "Nyan Stay",
+    description: "猫専用ペットシッターのサイト。安心感をテーマにした優しいデザイン。",
+    image: "/nyanstay.png",
+    tags: ["Next.js", "TypeScript", "Responsive"],
+    link: "https://cat-sitter-one.vercel.app",
+  },
+  {
     title: "Markvilla Demo",
     description: "不動産運用のデモLP。高級感と信頼感を重視したデザイン。",
-    image: "/images/markvilla.jpg", // Placeholder
+    image: "/markvilla.png",
     tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    link: "https://lp-demo-markvilla.vercel.app", // Adjust if deployed elsewhere
+    link: "https://lp-demo-markvilla.vercel.app",
   },
   {
     title: "Nurse Introduction",
     description: "看護師紹介LP。安心感と清潔感をテーマにした優しいデザイン。",
-    image: "/images/nurse.jpg", // Placeholder
+    image: "/nurse-intro.png",
     tags: ["Next.js", "TypeScript", "Responsive"],
-    link: "https://lp-nurse-intro.vercel.app", // Adjust if deployed elsewhere
+    link: "https://hp-nurse-intro.vercel.app",
+  },
+  {
+    title: "Okayu LAB",
+    description: "メインポートフォリオサイト",
+    image: "/okayulab.png",
+    tags: ["Next.js", "TypeScript", "Responsive"],
+    link: "https://okayu-lab.vercel.app/",
   },
 ];
 
