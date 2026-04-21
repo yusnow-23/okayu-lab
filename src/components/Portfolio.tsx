@@ -1,6 +1,7 @@
 "use client";
 
 import { ExternalLink } from "lucide-react";
+import Image from "next/image";
 import { portfolioItems } from "@/lib/data";
 
 import WavySeparator from "./WavySeparator";
@@ -22,11 +23,14 @@ export default function Portfolio() {
                 key={index}
                 className="card-base overflow-hidden group hover:-translate-y-1"
               >
-                <div className="relative h-48 bg-sky-50 overflow-hidden flex items-center justify-center">
-                  {/* Visual placeholder with cute colors */}
-                  <div className="text-sky-300 opacity-50 font-bold text-xl">
-                    準備中...
-                  </div>
+                <div className="relative h-48 bg-sky-50 overflow-hidden">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover"
+                  />
 
                   <div className="absolute inset-0 bg-white/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
                     <a
