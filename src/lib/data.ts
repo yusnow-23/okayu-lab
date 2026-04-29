@@ -2,18 +2,18 @@ import { Github, Instagram } from "lucide-react";
 
 export const profile = {
   name: "Yuki",
-  role: "Engineer & Designer / Registered Dietitian",
-  bio: "感性(ISFP) × 技術(Engineer) × 暮らし(Life). 4年間のエンジニア経験（Python, C#）と管理栄養士としての視点を活かし、機能美と情緒的価値を兼ね備えたWeb制作を行います。",
-  email: "contact@example.com", // TODO: Replace with actual email or contact form
+  like: "Cat, Anime, Manga, Karaoke, Idols",
+  bio: "神奈川県在住のエンジニア。新卒で管理栄養士として働いていた際、日々の業務で使うシステムの仕組みに興味を持ったことがきっかけでITに興味を持つ。ITスクールでの学習と独学を経て、27歳でエンジニアとしてのキャリアをスタート。Python/Djangoを用いたWeb開発、C#による業務システムの改修・開発などの一連の業務を経験。",
+  email: "sn.ow.swnt@gmail.com", // TODO: Replace with actual email or contact form
   socials: [
-    {
-      name: "Instagram",
-      url: "https://instagram.com/your-account", // TODO: Update URL
-      icon: Instagram,
-    },
+    // {
+    //   name: "Instagram",
+    //   url: "https://instagram.com/your-account", // TODO: Update URL
+    //   icon: Instagram,
+    // },
     {
       name: "GitHub",
-      url: "https://github.com/your-account", // TODO: Update URL
+      url: "https://github.com/yusnow-23", // TODO: Update URL
       icon: Github,
     },
     // Add more if needed
@@ -21,18 +21,18 @@ export const profile = {
 };
 
 export const skills = [
-  { name: "Python (Django)", level: 80 },
-  { name: "C# (WinForms)", level: 80 },
+  { name: "Python (Django)", level: 40 },
+  { name: "C# (WinForms)", level: 70 },
   { name: "TypeScript", level: 40 },
   { name: "React / Next.js", level: 40 },
   { name: "SQL", level: 70 },
-  { name: "Canva / Figma", level: 50 },
+  //{ name: "Canva / Figma", level: 50 },
 ];
 
 export const portfolioItems = [
   {
     title: "Nyan Stay",
-    description: "猫専用ペットシッターのサイト。安心感をテーマにした優しいデザイン。",
+    description: "猫専用ペットシッターのホームページ。安心感をテーマにした優しいデザイン。",
     image: "/nyanstay.png",
     tags: ["Next.js", "TypeScript", "Responsive"],
     link: "https://cat-sitter-one.vercel.app",

@@ -15,11 +15,11 @@ export default function Hero() {
               OKAYU LAB
             </span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
+          {/* <p className="mt-6 text-lg sm:text-xl text-slate-500 max-w-2xl mx-auto leading-relaxed">
             機能美と情緒的価値を実装するエンジニア。
             <br />
             あなたの「想い」を、やわらかく形にします。
-          </p>
+          </p> */}
           <div className="mt-10 flex justify-center gap-4">
             <a
               href="#portfolio"
