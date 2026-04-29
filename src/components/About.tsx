@@ -16,18 +16,18 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Bio */}
             <div>
-              <h2 className="title-cute text-sky-400">私について</h2>
+              <h2 className="title-cute text-sky-400">About me</h2>
               <p className="text-lg text-slate-600 leading-relaxed mb-8 font-medium">
                 {profile.bio}
               </p>
               <div className="space-y-4 bg-sky-50 p-6 rounded-3xl border border-sky-100">
                 <div className="flex items-center space-x-4">
-                  <span className="w-24 font-bold text-sky-400">役割</span>
-                  <span className="text-slate-700">{profile.role}</span>
+                  <span className="w-24 font-bold text-sky-400">Like</span>
+                  <span className="text-slate-700">{profile.like}</span>
                 </div>
                 <div className="flex items-center space-x-4">
                   <span className="w-24 font-bold text-sky-400">拠点</span>
-                  <span className="text-slate-700">Japan</span>
+                  <span className="text-slate-700">Japan / Kanagawa</span>
                 </div>
               </div>
             </div>
